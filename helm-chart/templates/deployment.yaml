@@ -22,6 +22,14 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          envFrom:
-          - configMapRef:
-              name: {{ .Release.Name }}-configmap
+          env:
+          - name: CIRCLE_COLOR 
+            value: {{ .Values.color.circle }}
+          - name: OVAL_COLOR
+            value: {{ .Values.color.oval }}
+          - name: SQUARE_COLOR
+            value: {{ .Values.color.square }}
+          - name: TRIANGLE_COLOR
+            value: {{ .Values.color.triangle }}
+          - name: RECTANGLE_COLOR
+            value: {{ .Values.color.rectangle }}
