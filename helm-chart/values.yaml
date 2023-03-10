@@ -17,6 +17,6 @@ service:
 color:
    circle: orange
    oval: purple
-   triangle: yellow
+   triangle: brown
    rectangle: pink
    square: blue
