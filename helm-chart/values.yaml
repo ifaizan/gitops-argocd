@@ -1,4 +1,4 @@
-replicaCount: 5
+replicaCount: 3
 
 image:
   repository: siddharth67/php-random-shapes:v1
@@ -16,7 +16,7 @@ service:
   
 color:
    circle: orange
-   oval: purple
+   oval: green
    triangle: brown
    rectangle: pink
    square: blue
